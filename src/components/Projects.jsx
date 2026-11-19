@@ -3,35 +3,38 @@ import React from 'react';
 const projectsData = [
   {
     id: 1,
-    title: 'Winzee — aplicativo de chat web',
-    type: 'app',
-    thumbClass: '',
-    image: '/eu site.png', // or dedicated project banner
-    link: '#',
+    title: 'DSignerTV — Digital Signage & TV',
+    desc: 'Plataforma de mídia indoor, gestão remota de telas Android TV, agendamento de playlists e chamada de senhas.',
+    tag: 'Digital Signage',
+    image: '/desenvolvimentos/dsignertv.gif',
+    link: 'https://dsignertv.fbard.com.br/',
     delay: '',
   },
   {
     id: 2,
-    title: 'Landing page de cursos',
-    type: 'p2',
-    label: 'Landing page',
-    link: '#',
+    title: 'PlayAds — Rádio Indoor & Locuções com IA',
+    desc: 'Central de áudio comercial para PDV com geração de locuções por inteligência artificial e agendamento de playlists.',
+    tag: 'Automação Comercial',
+    image: '/desenvolvimentos/PlayAds_Logo.png',
+    link: 'https://playweb.fbard.com.br/',
     delay: 'reveal-delay-1',
   },
   {
     id: 3,
-    title: 'Clone de interface',
-    type: 'p3',
-    label: 'Projeto 03',
-    link: '#',
+    title: 'System Stock — Gestão Inteligente de Estoque',
+    desc: 'Sistema multi-setorial de estoque com terminal de requisições, controle de validade e inteligência analítica.',
+    tag: 'Gestão & Analytics',
+    image: '/desenvolvimentos/system stock.png',
+    link: 'https://systemstock.fbard.com.br/',
     delay: 'reveal-delay-2',
   },
   {
     id: 4,
-    title: 'Painel de dados',
-    type: 'p4',
-    label: 'Projeto 04',
-    link: '#',
+    title: 'Foodly — Cardápio Digital & Autoatendimento',
+    desc: 'Plataforma para restaurantes com pedidos por Totem e QR Code na mesa, personalização de pratos e gestão de comandas.',
+    tag: 'Food Service & Totem',
+    image: '/desenvolvimentos/Foodly-logo.png',
+    link: 'https://foodly.fbard.com.br/',
     delay: 'reveal-delay-3',
   },
 ];
@@ -41,7 +44,7 @@ export default function Projects() {
     <section className="projects" id="projetos">
       <div className="head reveal">
         <h2>Projetos em destaque</h2>
-        <p>Uma seleção de trabalhos que mostram meu interesse por design e desenvolvimento.</p>
+        <p>Sistemas e plataformas reais desenvolvidos para automação comercial, gestão e entretenimento corporativo.</p>
       </div>
 
       <div className="grid">
@@ -50,12 +53,14 @@ export default function Projects() {
             key={project.id}
             className={`card reveal ${project.delay}`}
             href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <div className={`thumb ${project.type !== 'app' ? project.type : ''}`}>
+            <div className="thumb">
               {project.image ? (
                 <img src={project.image} alt={project.title} />
               ) : (
-                <b>{project.label}</b>
+                <b>{project.tag}</b>
               )}
             </div>
             <div className="t">
@@ -65,15 +70,16 @@ export default function Projects() {
                   fill="currentColor"
                 />
               </svg>
-              {project.title}
+              <span>{project.title}</span>
             </div>
+            {project.desc && <p className="card-desc">{project.desc}</p>}
           </a>
         ))}
       </div>
 
       <a
         className="more reveal"
-        href="https://github.com/"
+        href="https://github.com/MicaelTech3"
         target="_blank"
         rel="noopener noreferrer"
       >

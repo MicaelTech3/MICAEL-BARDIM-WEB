@@ -246,20 +246,32 @@
 
 .projects .card .thumb {
   height: 220px;
-  background: #181818;
+  background: #141414;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projects .card .thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 22px;
   transition: transform 0.45s var(--transition-smooth);
 }
 
 .projects .card:hover .thumb img {
-  transform: scale(1.06);
+  transform: scale(1.08);
+}
+
+.projects .card .card-desc {
+  padding: 0 22px 22px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
 }
 
 .projects .card .thumb.p2 {
