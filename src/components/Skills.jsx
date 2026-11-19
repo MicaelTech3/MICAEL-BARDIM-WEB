@@ -2,51 +2,27 @@ import React from 'react';
 
 const skillsData = [
   {
-    title: 'Front-end',
-    desc: 'Interfaces envolventes e fáceis de usar, feitas com frameworks modernos.',
-    chips: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React'],
+    title: 'Suporte de TI & Infraestrutura',
+    desc: 'Atendimento e suporte técnico, diagnóstico de hardware e sistemas, configuração de redes locais e resolução prática de chamados.',
+    chips: ['Hardware', 'Windows', 'Redes', 'Diagnósticos', 'Suporte'],
     delay: '',
   },
   {
-    title: 'Estilo e design',
-    desc: 'Visuais bonitos e responsivos, com ferramentas atuais de estilização.',
-    chips: ['Tailwind', 'Sass', 'Figma'],
+    title: 'Desenvolvimento Web',
+    desc: 'Criação de interfaces web responsivas, componentes práticos e telas dinâmicas para soluções do dia a dia.',
+    chips: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vite'],
     delay: 'reveal-delay-1',
   },
   {
-    title: 'Linguagens de programação',
-    desc: 'Resolução de problemas e estruturas de dados aplicadas na prática.',
-    chips: ['Python', 'C', 'Java'],
+    title: 'Ferramentas & Integrações',
+    desc: 'Uso de versionamento para controle de código e serviços em nuvem para bancos de dados em tempo real e autenticação.',
+    chips: ['Git', 'GitHub', 'Firebase', 'APIs REST'],
     delay: 'reveal-delay-2',
   },
   {
-    title: 'Back-end',
-    desc: 'Lógica de servidor e APIs robustas para aplicações dinâmicas.',
-    chips: ['Node.js', 'Express', 'APIs REST'],
-    delay: 'reveal-delay-3',
-  },
-  {
-    title: 'Banco de dados',
-    desc: 'Dados armazenados com segurança e recuperados com eficiência.',
-    chips: ['PostgreSQL', 'MongoDB', 'Firebase'],
-    delay: '',
-  },
-  {
-    title: 'Versionamento e colaboração',
-    desc: 'Gestão de código e trabalho em equipe sem atrito.',
-    chips: ['Git', 'GitHub', 'Code review'],
-    delay: 'reveal-delay-1',
-  },
-  {
-    title: 'UI/UX',
-    desc: 'Interfaces intuitivas, agradáveis e fáceis de navegar.',
-    chips: ['Prototipação', 'Wireframes'],
-    delay: 'reveal-delay-2',
-  },
-  {
-    title: 'Desenvolvimento pessoal',
-    desc: 'Aprendizado contínuo e crescimento em equipe.',
-    chips: ['Comunicação', 'Organização', 'Liderança'],
+    title: 'Formação & Aprendizado Contínuo',
+    desc: 'Graduando em Análise e Desenvolvimento de Sistemas, fortalecendo a base teórica e buscando aprender algo novo diariamente.',
+    chips: ['ADS', 'Lógica', 'Resolução de Problemas', 'Evolução Contínua'],
     delay: 'reveal-delay-3',
   },
 ];
@@ -55,7 +31,7 @@ export default function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="wrap">
-        <h2 className="reveal">Habilidades que movem minha paixão</h2>
+        <h2 className="reveal">O que pratico no dia a dia</h2>
         <div className="cols">
           {skillsData.map((sk, index) => (
             <div key={index} className={`sk reveal ${sk.delay}`}>

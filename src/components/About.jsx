@@ -9,17 +9,21 @@ export default function About() {
 
   return (
     <section className="about" id="sobre">
-      <p className="big reveal">
-        Movido pela curiosidade e pelo gosto por design, crio experiências digitais simples,
-        funcionais e marcantes. Sou estudante e estou sempre aprendendo algo novo.
-      </p>
+      <div className="reveal">
+        <p className="big">
+          Sou de Gramado (RS), tenho 22 anos, sou casado e apaixonado por tecnologia.
+          Trabalho na <strong>GTek Soluções em Tecnologia</strong> com suporte de TI e atuo no desenvolvimento para a <strong>TechSolution</strong>.
+        </p>
+        <p style={{ marginTop: '18px', color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: '1.65' }}>
+          Atualmente estudo <strong>Análise e Desenvolvimento de Sistemas</strong>. Não pretendo dizer que sei muita coisa: domino algumas ferramentas e busco aprender e evoluir a cada dia, aplicando na prática com dedicação, resolução ágil de problemas e vontade constante de crescer.
+        </p>
+      </div>
       <aside className="reveal reveal-delay-2">
         <p>
-          A mistura entre paixão por design, desenvolvimento e criatividade me coloca no ponto onde ideias
-          viram produto digital.
+          Divido meu dia entre o suporte de TI na infraestrutura da GTek e a construção de projetos e sistemas práticos para a TechSolution.
         </p>
         <a href="#contato" onClick={scrollToContact}>
-          Mais sobre mim{' '}
+          Fale comigo{' '}
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M7.97177 14.2759C7.93427 14.6884 8.23827 15.0532 8.65079 15.0907C9.0633 15.1282 9.42811 14.8242 9.46561 14.4117L8.71869 14.3438L7.97177 14.2759ZM9.18744 9.18748L9.11954 8.44056C8.75898 8.47334 8.4733 8.75901 8.44052 9.11958L9.18744 9.18748ZM14.4116 9.46565C14.8241 9.42815 15.1281 9.06334 15.0906 8.65083C15.0531 8.23831 14.6883 7.93431 14.2758 7.97181L14.3437 8.71873L14.4116 9.46565ZM14.2822 15.3428C14.575 15.6357 15.0499 15.6357 15.3428 15.3428C15.6357 15.05 15.6357 14.5751 15.3428 14.2822L14.8125 14.8125L14.2822 15.3428ZM8.71869 14.3438L9.46561 14.4117L9.93436 9.25538L9.18744 9.18748L8.44052 9.11958L7.97177 14.2759L8.71869 14.3438ZM9.18744 9.18748L9.25534 9.9344L14.4116 9.46565L14.3437 8.71873L14.2758 7.97181L9.11954 8.44056L9.18744 9.18748ZM9.18744 9.18748L8.65711 9.71781L14.2822 15.3428L14.8125 14.8125L15.3428 14.2822L9.71777 8.65715L9.18744 9.18748ZM12 3V3.75C16.5563 3.75 20.25 7.44365 20.25 12H21H21.75C21.75 6.61522 17.3848 2.25 12 2.25V3ZM21 12H20.25C20.25 16.5563 16.5563 20.25 12 20.25V21V21.75C17.3848 21.75 21.75 17.3848 21.75 12H21ZM12 21V20.25C7.44365 20.25 3.75 16.5563 3.75 12H3H2.25C2.25 17.3848 6.61522 21.75 12 21.75V21ZM3 12H3.75C3.75 7.44365 7.44365 3.75 12 3.75V3V2.25C6.61522 2.25 2.25 6.61522 2.25 12H3Z"

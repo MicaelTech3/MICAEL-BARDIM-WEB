@@ -27,7 +27,7 @@ export default function Hero() {
         <img
           ref={imgRef}
           src="/eu site.png"
-          alt="Micael Bardim"
+          alt="Micael Bardim — Gramado RS"
           loading="eager"
         />
         <div className="hero-overlay"></div>
